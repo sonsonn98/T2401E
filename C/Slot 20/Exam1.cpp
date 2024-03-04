@@ -9,19 +9,23 @@ int main(){
 		printf("Enter number no.%d:\n",i+1);
 		scanf("%d",&arr[i]);
 	}
-	//COMPUTE
-	int min;
-	for (int i=0,count=0;i<n;i++){
-		if (arr[i]>0) {
+	//Find the first positive number
+	int min,count=0,i=0;
+	for (i;i<n;i++){
+		if (arr[i]>0){
 			min=arr[i];
-			count++;
-			if (arr[i+1]<arr[i]) {
+			count=1;
+			break;}}
+	if (count==0){
+	printf("There is no positive number");}
+	else {
+		for (i+1;(i+1)<n;i++){
+			if (arr[i+1]<min && arr[i+1]>0){
 				min=arr[i+1];
-				i++;
-			}
 			}
 		}
-	printf("Min number is:%d",min);
-		
+		printf("Min number is %d",min);
 	}
+}
+	
 
