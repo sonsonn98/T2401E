@@ -1,0 +1,51 @@
+.container{
+    display: grid;
+    grid-template-columns: 25% 35% 15% 25%;
+}
+header{
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+.right{
+    float: right;
+}
+.header_content{
+    padding: 10px;    
+}
+.header_search_content{
+    display: none;
+}
+.header_search:hover +.header_search_content{
+    display:flex;
+    border-style: groove;
+}
+nav{
+    width:80%;
+    margin: auto;
+    display: flex;
+}
+.nav_content{
+    padding: 10px;
+}
+.aside_left{
+    grid-column: 1;
+}
+main{
+    grid-column: 2;
+    margin: auto 5%;
+}
+aside{
+    grid-column: 3;
+}
+p{
+    text-align: justify;
+    margin: auto 0;
+    font-size: large;
+}
+img{
+    width:100%;
+    
+}
+
+}
