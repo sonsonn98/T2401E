@@ -1,0 +1,63 @@
+.icon_background,
+.facebook_background,
+.twitter_background,
+.linkedin_background,
+.bookmark_background,
+.comment_background,
+.print_background,
+.back_background{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    color: #8a8888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_color{
+    color:#8a8888;
+}
+.home_background{
+    background-color:#e6e6e6 ;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home_background:hover{
+    background-color: #9f224e;
+}
+.home_background:hover i{
+    color: white;
+}
+.fa-bars:hover{
+    color: #9f224e;
+}
+.facebook_background:hover{
+    color: white;
+    background-color: #3b5999;
+}
+.twitter_background:hover{
+    color: white;
+    background-color: #55acee;
+}
+.linkedin_background:hover{
+    color: white;
+    background-color: #0a66c2;
+}
+.bookmark_background:hover{
+    color: white;
+    background-color: #087cce;
+}
+.comment_background:hover{
+    color: white;
+    background-color:#9f224e;
+}
+.back_background:hover{
+    color: white;
+    background-color: #087cce;
+}
