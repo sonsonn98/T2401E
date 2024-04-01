@@ -1,0 +1,74 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    align-items: center;
+}
+form{
+    width: 300px;
+}
+.login_twitter, .login_facebook, .container button{
+    width: 100%;
+    background-color: rgb(66 174 236);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding:10px 0;
+    border-radius: 5px;
+    margin:5px 0;
+    border: none;
+    text-decoration: none;
+}
+.login_twitter{
+    background-color: rgb(66 174 236);
+}
+.login_facebook{
+    background-color: rgb(65 91 161);
+}
+.container button{
+    background-color: rgb(0 122 255);
+}
+.form_box{
+    border-radius: 5px;
+    border: thin solid black;
+    margin:10px 0;
+}
+.form_icon{
+    background-color: rgb(215, 215, 215);
+    padding:10px;
+    display: inline-block;
+}
+.form_box input,select  {
+    display: inline-block;
+    border:none;
+    outline: none;
+}
+h5 {
+    width: 100%;
+    margin: .7em auto;
+    overflow: hidden;
+    text-align: center;
+    font-weight:300;
+  }
+  h5:before, h5:after {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    margin: 0 .5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    color: rgb(215, 215, 215);
+  }
+  h5:after {
+    margin: 0 -55% 0 .5em;
+  }
+  #message{
+    /* position:absolute;
+    right: 0;
+  } */
