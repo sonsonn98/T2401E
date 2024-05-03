@@ -1,0 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    margin:auto;
+}
+form .col{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+.col{
+    display: inline-flex;
+}
