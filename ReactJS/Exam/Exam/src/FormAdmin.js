@@ -21,6 +21,9 @@ function FormAdmin (){
 
     const save= (id,title,author,year) =>{
         if(id === 0){
+            // if(title =="" || author =="" || year ==0){
+            //     alertmsg.style.display = "block"
+            // }
             db.book.add({title:title,author:author,year:year})
         } else {
             db.book.update(id,{title:title, author:author, year:year})
