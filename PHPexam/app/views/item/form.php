@@ -7,31 +7,32 @@
 </head>
 <?php 
     $item = $data["item"];
-    $error =array();
-    if(empty($item->item_code)){
-        $error["item_code"]["required"]="Truong item_code khong duoc de trong";
-    } else {
-        if(strlen($item->item_code) <10 ) {
-            $error["item_code"]["leninvalid"] = "Truong item_code khong the nho hon 10 ky tu";
-        }
-    }
+    $error = isset($item->error) ? $item->error :"";
 ?>
 <body>
     <form action="http://localhost/phpexam/item/execute" method="POST">
         <input type="hidden" name="id" value='<?php echo ($item)  ? $item->id : "" ?>'>
-        <input type="text" name="item_code" placeholder="input item_code" value='<?php echo ($item)  ? $item->item_code : "" ?>'>
+        <input type="text" name="item_code" placeholder="input item_code" value='<?php echo !empty($item)  ? $item->item_code : "" ?>'>
             <?php 
-                echo empty($error["item_code"]["required"]) ? ""
-                : "<span style='color:red;'>".$error['item_code']['required']."</span>";
+                echo empty($item->error["item_code"]["required"]) ? ""
+                : "<span style='color:red;'>".$item->error['item_code']['required']."</span>";
             ?>
             <?php
-                echo empty($error["item_code"]["invalid"]) ? ""
-                : "<span style='color:red'>".$error['email']['invalid']."</span>";
+                echo empty($item->error["item_code"]["invalid"]) ? ""
+                : "<span style='color:red'>".$item->error['item_code']['invalid']."</span>";
                 ?>
-        <input type="text" name="item_name" placeholder="input item_name"value='<?php echo ($item)  ? $item->item_name : "" ?>'>
-        <input type="text" name="quantity" placeholder="input quantity" value='<?php echo ($item)  ? $item->quantity : "" ?>'>
-        <input type="text" name="expired_date" placeholder="input expired_date" value='<?php echo ($item)  ? $item->expired_date : "" ?>'>
-        <input type="text" name="note" placeholder="input note" value='<?php echo ($item)  ? $item->note : "" ?>'>
+        <input type="text" name="item_name" placeholder="input item_name"value='<?php echo !empty($item)  ? $item->item_name : "" ?>'>
+        <?php 
+                echo empty($item->error["item_name"]["required"]) ? ""
+                : "<span style='color:red;'>".$item->error['item_name']['required']."</span>";
+            ?>
+            <?php
+                echo empty($item->error["item_name"]["invalid"]) ? ""
+                : "<span style='color:red'>".$item->error['item_name']['invalid']."</span>";
+                ?>
+        <input type="text" name="quantity" placeholder="input quantity" value='<?php echo !empty($item)  ? $item->quantity : "" ?>'>
+        <input type="text" name="expired_date" placeholder="input expired_date" value='<?php echo !empty($item)  ? $item->expired_date : "" ?>'>
+        <input type="text" name="note" placeholder="input note" value='<?php echo !empty($item)  ? $item->note : "" ?>'>
         <input type="submit" value="submit" name="submit">
 
 

@@ -15,21 +15,33 @@ class ItemController  extends BaseController {
             $expired_date = $_POST["expired_date"];
             $note = $_POST["note"];
             $id =  $_POST["id"];
-            if(empty($id)) {
+            //handle error
+            $validatingitem = $this->__model->validateItem($id,$item_code, $item_name, $quantity,$expired_date, $note);
+            // var_dump($validatingitem);
+            // die();
+            if(empty($validatingitem)) {
+                if(empty($id)) {
                 //insert
-                        $this->__model->addNewItem($item_code, $item_name, $quantity,$expired_date, $note);                               
-            } else {
+                    $this->__model->addNewItem($item_code, $item_name, $quantity,$expired_date, $note);
+                        header("Location: http://localhost/phpexam/item/listItems");                               
+                } 
+                else {
                 //update item
                 $this->__model->updateItemById($id,$item_code, $item_name, $quantity,$expired_date, $note);
+                header("Location: http://localhost/phpexam/item/listItems");
+                }
+            } 
+            else {
+                $this->view("item/form", ["item"=> $validatingitem]);
             }
-            
-        } else {
+        } 
+        else {
             $item = $this->__model->getItemById($id);
             $this->view("item/form", ["item"=> $item]);
         }
-
+        }
         //onpen form
-    }
+    
 
     public function listItems() {
         $listItem =  $this->__model->listItems();
