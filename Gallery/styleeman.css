@@ -1,0 +1,41 @@
+.image-container {
+    position: relative;
+    overflow: visible; /* Ensure overflow is visible */
+    margin-top: 50px; /* Added top margin */
+    margin-bottom: 50px; /* Added bottom margin to prevent cutting off */
+}
+
+.image-container img {
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images are cropped to fit container */
+}
+
+/* Scaling effect for larger screens */
+.image-container:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjust scaling for smaller screens */
+@media (max-width: 767px) {
+    .image-container:hover img {
+        transform: scale(1.05); /* Reduced scale for small screens */
+    }
+}
+
+.image-link {
+    display: block;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+}
