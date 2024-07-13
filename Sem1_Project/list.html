@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css,js/sub-header.css" />
+    <link rel="stylesheet" href="/css,js/maincontent.css" />
+    <link rel="stylesheet" href="/css,js/reponsive.css" />
+    <link rel="stylesheet" href="/css,js/slide.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="sub-header">
+      <nav class="header">
+        <ul class="menu">
+          <li class="menu-item dropdown">
+            <a href="" class="menu-link">THE LISTS</a>
+            <div class="submenu">
+              <a href="#" class="menu-link"></a>
+              <ul class="submenu-list">
+                <li><a href="" class="menu-link">WEST</a></li>
+                <li><a href="" class="menu-link">EAST</a></li>
+                <li><a href="" class="menu-link">SOUTH</a></li>
+                <li><a href="" class="menu-link">NORTH</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">BEST OF THE BEST</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">DESTINATIONS</a>
+          </li>
+          <li class="menu-item logo">
+            <img width="100" src="/image/logo.png" alt="" />
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">BEACH AMBASSADORS</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">JUDGES</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">ABOUT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="section-destination">
+        <div class="container">
+          <h2>THE BEST BEACHES IN THE NORTH, 2024</h2>
+          <h3>
+            Welcome to the 2024 list of The North's 50 Best Beaches. Our 2024
+            list is a culmination of countless days spent by our judges, Beach
+            Ambassadors and North's 50 Beaches team exploring beaches all over
+            the world. We hope this list provides the inspiration you need to
+            plan your next beach vacation.
+          </h3>
+          <section class="section-gallery">
+            <div class="gallery-container">
+              <div class="gallery row">
+                <div class="slideshow-container l-6 m-6 c-12">
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="/image/011.webp" style="width: 100%" />
+                    <div class="text">Caption Text</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="/image/012.webp style="width: 100%" />
+                    <div class="text">Caption Two</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="/image/013.webp" style="width: 100%" />
+                    <div class="text">Caption Three</div>
+                  </div>
+
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br />
+
+                <div style="text-align: center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="css,js/slide.js
+    "></script>
+  </body>
+</html>
