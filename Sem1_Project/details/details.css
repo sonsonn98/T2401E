@@ -237,10 +237,11 @@
 .details-container-more {
     width: 100%;
     padding: 0 60px;
+    padding-bottom: 60px;
 }
 
 .details-more-item {
-    width: 420px;
+    width: 650px;
     height: auto; 
 }
 
@@ -348,6 +349,18 @@
 
     .details-pluses-info {
         width: 56%;
+    }
+
+    .beach-header-mid {
+        width: 40%;
+    }
+
+    .details-container-img {
+        height: 900px;
+    } 
+
+    .details-more-item {
+        width: 420px;
     }
 }
 

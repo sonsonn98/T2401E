@@ -155,7 +155,6 @@
 
 .details-hotel {
     width: 100%;
-    padding: 80px 0;
 }
 
 .details-hotel-container {
@@ -193,11 +192,13 @@
 .details-img-bg {
     width: 100%;
     height: 900px;
+    padding: 150px 0;
 }
+
 
 .details-container-more {
     width: 100%;
-    padding: 80px 60px;
+    padding: 0 60px;
 }
 
 .details-more-item {

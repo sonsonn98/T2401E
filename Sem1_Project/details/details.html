@@ -5,16 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reponsive.css">
-
     <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
     <title>Details</title>
+
+    <style>
+        .menu-link {
+          color: white !important;
+        }
+      </style>
 </head>
+<script src="slide.js"></script>
 
 <body class="details-body">
 
     <div class="c-12 details-container-img">
         <!-- big img beach -->
         <img class=" details-big-img" src="https://worlds50beaches.com/assets/images/beaches-2024/041.webp" alt="">
+        <header class="sub-header" style="border-bottom: none">
+            <nav class="header">
+                <ul class="menu">
+                    <li class="menu-item dropdown">
+                        <a href="" class="menu-link">THE LISTS</a>
+                        <div class="submenu">
+                            <a href="#" class="menu-link"></a>
+                            <ul class="submenu-list">
+                                <li><a href="" class="menu-link">WEST</a></li>
+                                <li><a href="" class="menu-link">EAST</a></li>
+                                <li><a href="" class="menu-link">SOUTH</a></li>
+                                <li><a href="" class="menu-link">NORTH</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-link">BEST OF THE BEST</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-link">DESTINATIONS</a>
+                    </li>
+                    <li class="menu-item logo">
+                        <img width="100" src="img/transparentlogo.png" alt="" />
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-link">BEACH AMBASSADORS</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-link">JUDGES</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-link">ABOUT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </div>
 
     <main class="details-main">
@@ -334,9 +378,132 @@
                     </div>
                 </div>
             </div>
-        </section>
 
+            <!-- footer -->
+            <footer>
+                <div class="grid wide">
+                  <div class="footer-container">
+                    <div class="row footer">
+                      <div class="col l-8 m-8 c-12">
+                        <div class="footer-left row">
+                          <div class="footer-info row">
+                            <a href="">
+                              <img width="100" src="img//logo.png" alt="" />
+                            </a>
+                            <div class="footer-social">
+                              <div class="footer-title">FOLLOW US</div>
+                              <ul class="footer-social-list">
+                                <li>
+                                  <a href="">
+                                    <img
+                                      src="img/instagram.svg"
+                                      alt=""
+                                      class="social-icon"
+                                    />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="">
+                                    <img
+                                      src="img/youtube.svg"
+                                      alt=""
+                                      class="social-icon"
+                                    />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="">
+                                    <img
+                                      src="img/twitter.svg"
+                                      alt=""
+                                      class="social-icon"
+                                    />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="">
+                                    <img
+                                      src="img/facebook.svg"
+                                      alt=""
+                                      class="social-icon"
+                                    />
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="footer-link row">
+                            <div class="footer-link-item">
+                              <p class="footer-title">THE WORLD BEST BEACHES</p>
+                              <ul class="footer-list">
+                                <li><a href="">The West's Best 2024</a></li>
+                                <li><a href="">The East's Best 2024</a></li>
+                                <li><a href="">The South's Best 2024</a></li>
+                                <li><a href="">The North's Best 2024</a></li>
+                                <li><a href="">Destinations</a></li>
+                              </ul>
+                            </div>
+                            <div class="footer-link-item">
+                              <p class="footer-title">About Us</p>
+                              <ul class="footer-list">
+                                <li><a href="">The West's Best 2024</a></li>
+                                <li><a href="">The East's Best 2024</a></li>
+                                <li><a href="">The South's Best 2024</a></li>
+                                <li><a href="">The North's Best 2024</a></li>
+                                <li><a href="">Destinations</a></li>
+                              </ul>
+                            </div>
+                            <div class="footer-link-item">
+                              <p class="footer-title">Legal</p>
+                              <ul class="footer-list">
+                                <li><a href="">Privacy & Cookies</a></li>
+                                <li><a href="">Term & Conditions</a></li>
+                                <li><a href="">Site</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 m-4 c-12">
+                        <div class="footer-right">
+                          <p class="footer-title">
+                            BE THE FIRST TO HEAR ABOUT OUR NEW LISTS
+                          </p>
+                          <form action="" method="POST" class="footer-form">
+                            <input
+                              type="text"
+                              class="footer-form-input"
+                              placeholder="First Name*"
+                              required
+                            />
+                            <input
+                              type="email"
+                              class="footer-form-input"
+                              placeholder="Email Address*"
+                            />
+                          </form>
+                          <p class="footer-form-text">
+                            I would like to be kept updated on exclusive news, travel
+                            inspiration and offers from The World’s 50 Best Beaches. To
+                            learn more about how we store and process your data, visit our
+                            <a href="">Privacy Policy</a> .
+                          </p>
+                          <button type="submit" value="submit" class="footer-form-btn">
+                            SIGN UP
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer-copy">Copyright The World’s Best Inc, 2024.</div>
+                  </div>
+                </div>
+              </footer>
+        </section>
     </main>
+    
+
+
+
 
 
     <!-- fontawesome -->
