@@ -4,9 +4,14 @@
     padding: 0;
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .details-body {
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.10rem;
+    letter-spacing: 0.06rem;
 }
 
 .details-padding {
