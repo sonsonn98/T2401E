@@ -1,10 +1,10 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
+} */
 
-.header {
+.faq-header {
     background: url('https://img.thuthuatphanmem.vn/uploads/2018/10/03/hinh-anh-khu-du-lich-bien-dep_111549844.jpg') no-repeat center center;
     background-size: cover;
     color: white;
@@ -12,7 +12,7 @@ body {
     padding: 100px 0;
 }
 
-.header h1 {
+.faq-header .title {
     margin: 0;
     font-size: 48px;
 }

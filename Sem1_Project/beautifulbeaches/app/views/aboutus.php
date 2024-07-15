@@ -5,9 +5,8 @@
     <main>
         <!-- Section Hero -->
         <section class="section__about-hero">
-            <div class="container">
                 <div class="about-hero">
-                    <h1>ABOUT US</h1>
+                    <div class="title">ABOUT US</div>
                     <p>INSPIRING EPIC BEACH DAYS FOR OVER 7 YEARS.</p>
                 </div>
             </div>
@@ -15,7 +14,6 @@
 
         <!-- Section Story -->
         <section class="section__story">
-            <div class="container">
                 <div class="story">
                     <h2 class="story__title">OUR STORY</h2>
                     <p class="story__text">
@@ -41,7 +39,6 @@
                         shorelines.
                     </p>
                 </div>
-            </div>
             <div class="mission">
                 <img class="mission__image-left" src="https://worlds50beaches.com/assets/images/about1.webp"
                     alt="img" />
@@ -59,7 +56,6 @@
 
         <!-- OUR SELECTION PROCESS -->
         <section class="image-section">
-            <div class="container">
                 <div class="story">
                     <h2 class="story__title">OUR SELECTION PROCESS</h2>
                     <p class="story__text">Each year, we reach out to thousands of the world’s most experienced travel
@@ -117,7 +113,6 @@
                         Best Beaches.
                     </p>
                 </div>
-            </div>
             </div>
         </section>
     </main>
