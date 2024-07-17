@@ -109,6 +109,7 @@ body {
     border-color: #000;
 }
 .border3{
+    outline:none;
     font-size: 20px;
     border: none;
     width: 600px;
